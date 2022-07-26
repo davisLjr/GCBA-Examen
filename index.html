@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Test GCBA</title>
+
+  <link rel="stylesheet" href="node_modules/@gcba/obelisco/dist/obelisco.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar navbar-light navbar-md">
+    <div class="container">
+      <a href="#" class="navbar-brand" role="link">
+        <img
+          class="header-logo"
+          src="img/logo/logoba2x.png"
+          alt="Ciudad de buenos aires"
+          role="img"
+        />
+      </a>
+      <div class="navbar-search d-responsive ml-auto">
+        <form class="form-search form-search-sm" role="form">
+          <div class="form-group">
+            <input
+              type="search"
+              class="form-control form-control-sm input-search"
+              id="header-search-example-1"
+              name="header-search"
+              placeholder="Buscar"
+              aria-label="Ingrese su búsqueda"
+            />
+            <button class="reset" type="reset" role="button"></button>
+          </div>
+        </form>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav nav-pills" role="listbox">
+          <li class="nav-item d-responsive" role="list">
+            <div class="navbar-search">
+              <form class="form-search form-search-sm" role="form">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    class="form-control form-control-sm input-search"
+                    id="header-search-example-2"
+                    name="header-search"
+                    placeholder="Buscar"
+                    aria-label="Ingrese su búsqueda"
+                  />
+                  <button class="reset" type="reset" role="button"></button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!--HERO-->
+  <nav class="main-nav">
+    <div class='main container'>      
+      <div>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" role="listbox">
+            <li class="breadcrumb-item" role="list"><a href="#">Buenos Aires</a></li>
+            <li class="breadcrumb-item" role="list"><a href="#">Página anterior</a></li>
+          </ol>
+        </nav>
+      </div>
+  
+      <p>
+        ÚLTIMA ACTUALIZACIÓN 28/05/2020 - 16:00 HS
+      </p>
+      <h1>Coronavirus (Covid-19)</h1>
+      <p class="text-subtitle">
+        Recomendaciones y medidas para el cumplimiento del <strong>distanciamiento social</strong>, <strong>preventivo y obligatorio</strong> establecido por el
+        <a class="" href="#" target="_blank" rel="noreferrer" role="link">DNU 875/2020</a>.
+      </p>
+    </div>
+    <div class="main-cards">
+      <div class="container">
+        <div class="card-deck max-cards-3">
+          <a class="card" href="#" role="link">
+            <div class="card-body">
+              <h4 class="card-title">Testeos</h4>
+              <p class="card-text">
+                Si tenés algún síntomas, si estuviste en contacto con alguien.
+              </p>
+            </div>
+          </a>
+          <a class="card" href="#" role="link">
+            <div class="card-body">
+              <h4 class="card-title">Vacunación</h4>
+              <p class="card-text">
+                Si vos o un familiar quieren vacunarse, ingresá y empadronate.
+              </p>
+            </div>
+          </a>
+          <a class="card" href="#" role="link">
+            <div class="card-body">
+              <h4 class="card-title">Últimas medidas</h4>
+              <p class="card-text">
+                Quiero saber que medidas se toman en el gobierno.
+              </p>
+            </div>
+          </a>
+      </div>
+    </div>
+  </nav>
+  <!--HERO-->
+  <!--Banner form-->
+  <section class="container form-consult">
+    <div class="main-form">
+      <div class="main">
+        <div class="main-title">
+          <h3>Consultar mi resultado</h3>
+          <p>
+            Reacordá que los datos deben ser los mismo que se dejaron al </br> 
+            momento de testearse.
+          </p>
+        </div>
+        <form role="form">
+          <div class="form">
+            <div class="form-wrapper">
+              <div class="form-group">
+                <label for="number-input">Número de documento *</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="name-input"
+                  name="name"
+                  placeholder="Ejemplo ..."
+                  aria-label="ingresa tu numero de Dni"
+                />
+              </div>
+            </div>   
+            <div class="form-wrapper">
+              <div class="form-group">
+                <label for="number-input">Número de teléfono *</label>
+                  <input
+                  type="text"
+                  class="form-control"
+                  id="name-input"
+                  name="name"
+                  placeholder="Ejemplo ..."
+                  aria-label="Ingresa tu numero de contacto para Consultar tu resultado"
+                />
+              </div>
+            </div> 
+          </div>
+          <div class="btn-wrapper">
+            <button type="button" class="btn btn-primary" role="button">Consultar</button>
+          </div>      
+        </form>
+      </div>
+      <div class="image-form"></div>
+    </div>
+  </section>
+  <!--Banner form-->
+  <!--General services-->
+  <section class="main-service container">
+    <article class="main">
+      <div class="service">
+        <h2>Servicios generales</h2>
+        <div class="card-deck max-cards-3">
+          <div class="card card-simple" href="#">
+            <div class="card-body">
+              <div class="card-icon">
+                <img src="img/iconArticle/icon-card-2.svg" alt="icono equipo de salud" role="img" />
+              </div>
+              <h4 class="card-title">Información para el equipo de salud</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple" href="#">
+            <div class="card-body">
+              <div class="card-icon">
+                <img src="img/iconArticle/icon-card-1.svg" alt="icono comunicado protocolo" role="img"/>
+              </div>
+              <h4 class="card-title">Protocolos de apertura</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas.
+              </p>
+            </div>
+          </div>
+          <div class="card card-simple" href="#">
+            <div class="card-body">
+              <div class="card-icon">
+                <img src="img/iconArticle/icon-card-3.svg" alt="icono servicios & medidas" role="img"/>
+              </div>
+              <h4 class="card-title">Servicios y medidas de gobierno</h4>
+              <p class="card-text">
+                Recomendamos en este espacio no utilizar más de 3 líneas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <!--General services-->
+  <!--Section school-->
+  <section class="main-school container">
+    <h2>Escuelas</h2>
+    <div class="card-deck max-cards-1">
+      <div class="card" href="#">
+        <div class="card-body">
+          <h4 class="card-title">Vacunación docente</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+          </p>
+        </div>
+      </div>
+      <div class="card" href="#">
+        <div class="card-body">
+          <h4 class="card-title">Testeos docentes</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+          </p>
+        </div>
+      </div>
+      <div class="card" href="#">
+        <div class="card-body">
+          <h4 class="card-title">La escuela hoy</h4>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Section school-->
+  <!--Section in Home-->
+  <section class="article-section container">
+    <article>
+      <h2>Propuestas para hacer en casa</h2>
+      <div class="card-deck max-cards-3">
+        <a class="card card-simple" href="#">
+          <img
+            src="img/imageArticle/Enmascarar grupo 171@2x.png"
+            class="card-img-top"
+            alt="persona en casa"
+            role="img"
+          />
+          <div class="card-body">
+            <h4 class="card-title">
+              Vivamos cultura
+            </h4>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            </p>
+          </div>
+        </a>
+        <a class="card card-simple" href="#">
+          <img
+            src="img/imageArticle/Enmascarar grupo 173@2x.png"
+            class="card-img-top"
+            alt="estacion saludable"
+            role="img"
+          />
+          <div class="card-body">
+            <h4 class="card-title">
+              Estaciones saludables
+            </h4>
+            <p class="card-text">
+              Te acercamos distintas ejercicios para que te mantengas activo en tu hogar.
+            </p>
+          </div>
+        </a>
+        <a class="card card-simple" href="#">
+          <img
+            src="img/imageArticle/Enmascarar grupo 174@2x.png"
+            class="card-img-top"
+            alt="personas mayores"
+            role="img"
+          />
+          <div class="card-body">
+            <h4 class="card-title">
+              Personas Mayores
+            </h4>
+            <p class="card-text">
+              Te acercamos distintas ejercicios para que te mantengas activo en tu hogar.
+            </p>
+          </div>
+        </a>
+      </div>
+    </article>
+  </section>
+  <!--Section in Home-->
+  <!--Section Data covid-->
+  <section class="main-data">
+    <article class="container"> 
+      <h2>Información en datos</h2>
+      <p>
+        Conocé los datos de a evolución del COVID-19 y todo lo que estamos haciendo en la Ciudad.
+      </p>
+      <div class="btn-wrapper">
+        <button type="button" class="btn btn-primary" role="button">Ver datos de covid-19</button>
+        <button type="button" class="btn btn-secondary" role="button">Ver informes diarios</button>
+      </div>
+    </article>
+  </section>
+  <!--Section Data covid-->
+  <!--Section List symptom prevent-->
+  <section class="main-list container">
+    <div class="main">
+      <h2>Prevención</h2>
+      <p>
+        Limitá al máximo cualquier salida.
+      </p>
+      <div class="see-more">
+        <div href="#" class="btn btn-primary">Conocé los consejos para cuidarte</div>
+      </div>
+      <div class="card-deck max-cards-1">
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 05.svg"
+            class="card-img-left"
+            alt="persona con tapabocas"
+            role="img"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              El uso del tapabocas es obligatorio.
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 13.svg"
+            class="card-img-left"
+            alt="cubrirse la boca al toser"
+            role="img"
+          />
+          <div class="card-body"> 
+            <p class="card-text">
+              Al toser y estornudar, cubrirse la boca y nariz con el codo.
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 02.svg"
+            class="card-img-left"
+            alt="Producto de limpieza"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Limpiar superficies con agua y lavandina.
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 01.svg"
+            class="card-img-left"
+            alt="Lavarse las manos"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Lavarse la manos con agua y jabón o usar alcohol en gel.
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 09.svg"
+            class="card-img-left"
+            alt="No tocarse la cara"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Evitar tocarse la cara con las manos.
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 11.svg"
+            class="card-img-left"
+            alt="Distancia Preventiva 2mts"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Mantener al menos 2 metros de distanciamiento social.
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/prevencion/icon 14.png"
+            class="card-img-left"
+            alt="Ventanas abiertas"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Ventilemos lugares cerrados.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="questions">
+        <a class="" href="#" target="_blank" rel="noreferrer" role="link">Preguntas frecuentes</a>
+      </div>
+    </div>
+    <div class="main">
+      <h2>Sintomas</h2>
+      <p>
+        Si presentas alguno de estos síntomas.
+      </p>
+      <div class="see-more">
+        <div href="#" class="btn btn-primary">Acercate a una UFU</div>
+      </div>
+      <div class="card-deck max-cards-1">
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 07.svg"
+            class="card-img-left"
+            alt="Temperatura elevada"
+            role="img"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Temperatura mayor a 37.5º
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 08.svg"
+            class="card-img-left"
+            alt="Dolor de garganta"
+            role="img"
+          />
+          <div class="card-body"> 
+            <p class="card-text">
+              Dolor de garganta
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 06.svg"
+            class="card-img-left"
+            alt="Tos seca"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Tos seca continua
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 04.svg"
+            class="card-img-left"
+            alt="Dificultad al respirar"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Dificultad para respirar
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 03.svg"
+            class="card-img-left"
+            alt="perdida de olfato"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Pérdida del olfato o del gusto
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 12.png"
+            class="card-img-left"
+            alt="Cefalea"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Cefalea
+            </p>
+          </div>
+        </div>
+        <div class="card card-horizontal card-simple" href="#">
+          <img
+            src="img/iconList/sintomas/icon 10.png"
+            class="card-img-left"
+            alt="Diarrea & vomito"
+            role="img"
+          />
+          <div class="card-body">        
+            <p class="card-text">
+              Diarrea y/o vómitos
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Section List symptom prevent-->
+  <!--Section banner link-->
+  <section class="main-banner">
+    <div class="container">
+      <h6>Información oficial del Gobierno Nacional</h6>
+    </div>
+    <div class="container link">
+      <div class="card-deck">
+        <a class="external" href="#" target="_blank" rel="noreferrer" role="link">
+          App cuidar
+        </a>
+      </div>
+      <div class="card-deck">
+        <a class="external" href="#" target="_blank" rel="noreferrer" role="link">
+          Rectificación autodiagnóstico cuidar
+        </a>
+      </div>
+      <div class="card-deck">
+        <a class="external" href="#" target="_blank" rel="noreferrer" role="link">
+          Agencia Nacional de Discapacidad
+        </a>
+      </div>
+      <div class="card-deck">
+        <a class="external" href="#" target="_blank" rel="noreferrer" role="link">
+          Información COVID-19
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--Section banner link-->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="main-phone">
+        <img
+          class="img-vamos-ba"
+          src="img/footer/logo-foote.png"
+          alt="Vamos Buenos Aires"
+          role="img"
+        />
+        <section>
+          <ul class="list-inline">
+            <li class="list-inline-item phone-items">
+              Teléfonos útiles
+              <a href="https://www.buenosaires.gob.ar/laciudad/telefonosutiles">
+                Ver todos los teléfonos
+              </a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:102">102 <p>Niñez y Adolescencia</p> </a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:103">103 <p>Emergencias</p> </a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:107">107 <p>SAME</p></a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:911">911 <p>Policía</p></a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:144">144 <p>Violencia de género</p></a>
+            </li>
+            <li class="list-inline-item phone-items">
+              <a href="tel:147">147 <p>Atención ciudadana</p></a>
+            </li>
+          </ul>
+          <div class="main-redsocial">
+            <h4>Redes de la ciudad</h4>
+            <ul class="list-inline redsocial">
+              <li class="list-inline-item redes-items">
+                <a href="https://www.facebook.com/GCBA">
+                  <i class="bx bxl-facebook"></i>
+                  <p>
+                    Facebook
+                  </p>
+                </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://www.instagram.com/buenosaires">
+                  <i class="bx bxl-instagram"></i>
+                  <p>
+                    Instagram
+                  </p>    
+                </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://twitter.com/gcba">
+                  <i class="bx bxl-twitter"></i>
+                  <p>
+                    Twitter
+                  </p>
+                </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a href="https://www.youtube.com/user/GCBA">
+                  <i class="bx bxl-youtube"></i>
+                  <p>
+                    YouTube
+                  </p>
+                </a>
+              </li>
+              <li class="list-inline-item redes-items">
+                <a
+                  href="https://ar.linkedin.com/company/gobierno-de-la-ciudad-de-buenos-aires"
+                >
+                  <i class="bx bxl-linkedin"></i>
+                  <p>
+                    LinkedIn
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+    <hr class="divider" />
+    <div class="container">
+      <section class="footer-legal-section">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 col-xl-4 mb-4 mb-md-0 footer-content-img">
+            <img
+            class="img-vamos-ba"
+            src="img/footer/ciudad-ba.png"
+            alt="Vamos Buenos Aires"
+            role="img"
+          />
+          </div>
+          <div class="col-12 col-md-7 col-xl-8">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://boletinoficial.buenosaires.gob.ar">
+                  Boletín oficial
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="https://www.buenosaires.gob.ar/innovacion/ciudadinteligente/terminos-y-condiciones"
+                >
+                  Términos y condiciones
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/privacidad">
+                  Política de privacidad
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.buenosaires.gob.ar/oficiosjudiciales">
+                  Oficios judiciales
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  Danos tu opinión
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="footer-license-text">
+          Los contenidos de buenosaires.gob.ar están licenciados bajo
+          <br class="d-none d-sm-inline" />
+          Creative Commons Reconocimiento 2.5 Argentina License.
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

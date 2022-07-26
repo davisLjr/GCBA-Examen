@@ -1,0 +1,648 @@
+/*VARIABLES */
+  /*Colors*/
+$border-color:#FFDB2E;
+$green-background:#cffbe2;
+$gray-background:#F3F6F9;
+$blue-title:#007BC7;
+$gray-text:#6f7782;
+  /*Colors*/
+  /*FontSize*/
+$font-size-small:13px;
+$font-size-2-small:14px;
+$font-size-3-small:16px;
+$font-size-medium:17px;
+$font-size-2-medium:18px;
+$font-size-3-medium:19px;
+$font-size-4-medium:21px;
+$font-size-4-large:28px;
+  /*FontSize*/
+  /*BorderRadius*/
+$border-radius-small:4px;
+$border-radius-2-small:12px;
+$border-radius-medium:16px;
+$border-radius-big:50%;
+  /*BorderRadius*/
+  /*FontWeight*/
+$font-weight-normal:400;
+$font-weight-semibold:600;
+  /*FontWeight*/
+/*VARIABLES */
+
+body{
+  width: 100%;
+  box-sizing: border-box;
+}
+/* HEADER */
+.navbar {
+  z-index: 99;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  &.navbar-light {
+    border-bottom: none;
+    .form-control{
+      box-shadow: none;
+      margin-top: 0px;
+      height: 45px;
+      padding-left: 5%;
+    }
+  }
+  .header-logo {
+    width: 132px;
+    height: 34px;
+  }
+}
+/* HERO */
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 45px;
+  position: relative;
+  z-index: 1;
+  &::before{
+    content: "";
+    left:0;
+    right: 0;
+    position: absolute;
+    top: 0px;
+    bottom:60px;
+    background:$gray-background;
+    z-index: -1;
+  }
+  .main {
+    max-width: 1088px;
+    margin: auto;
+    width: 100%;
+    padding: 0px 15px;
+    .breadcrumb{
+      margin-bottom: 28px;
+      margin-top: 12px;
+    }
+    h1{
+      width: 80%;
+    }
+    p{
+      font-size: $font-size-small;
+    }
+    .text-subtitle{
+      font-size: $font-size-3-medium;
+      margin-bottom: 2.5rem;
+      max-width: 80%;
+    }
+  }
+  .main-cards {
+    .card{
+      border-left: 8px solid $border-color;
+      &:hover{
+        box-shadow: 0 0 0 2px #f3f6f9;
+      }
+      .card-title{
+        font-size: $font-size-4-medium;
+        font-weight: $font-weight-semibold;
+      }
+    }
+    .card:nth-child(3){
+      margin-top: 0px;
+    }
+  }
+}
+/* HERO */
+/* Form */
+.main-form {
+  overflow: hidden;
+  border-radius: $border-radius-medium;
+  background-color: $green-background;
+  max-width: 1060px;
+  width:100%;
+  padding: 35px 30px;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  .main {
+    width: 70%;
+    z-index: 999;
+    h3{
+      font-size:$font-size-4-large;
+    }
+    p{
+      font-size: $font-size-3-medium;
+    }
+    .form {
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      .form-wrapper {
+        width: 48%;
+        .form-control {
+          background: white;
+          box-shadow: none;
+          border-radius: $border-radius-small;
+          &:focus{
+            outline: inset;
+          }
+        }
+      }
+    }
+    .btn-wrapper {
+      margin-top: 8px;
+      .btn {
+        padding: 12px 16px;
+        max-height: 50px;
+      }
+    }
+  }
+  .image-form{
+    position: absolute;
+    right: 0px;
+    margin-right: -60px;
+    width: 400px;
+    height: 285px;
+    background-image: url("../img/imageForm/grupo2.png");
+    background-position: 0px 30px;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    bottom: 0px;
+  }
+}
+/* Form */
+/* Article Service*/
+.main-service {
+  margin-top: 64px;
+  margin-bottom: 80px;
+  .service{
+    h2 {
+      margin-bottom: 24px;
+      font-weight: $font-weight-semibold;
+    }
+    .card-deck {
+      .card{
+        .card-icon{
+          width:3.5rem;
+          height: 3.5rem;
+          border-radius: $border-radius-big;
+          display: flex;
+          justify-content: center;
+          img{
+            width: 32px
+          }
+        }
+        .card-title {
+          color:$blue-title;
+          font-weight: $font-weight-semibold;
+          font-size: $font-size-4-medium;
+        }
+      }
+    }
+  }
+}
+/* Article Service*/
+/* seccion School */
+.main-school{
+  display: none;
+}
+/* seccion School */
+/* Article Enlace*/
+.article-section {
+  margin-bottom: 80px;
+  h2 {
+    margin-bottom: 24px;
+    font-weight: $font-weight-semibold;
+  }
+  .card-simple{
+    .card-body{
+      padding: 24px;
+      background: $gray-background;
+      border-radius: 0px 0px 16px 16px;
+      .card-title {
+        color:$blue-title;
+        font-weight: $font-weight-normal;
+        font-size: $font-size-4-medium;
+        text-decoration: underline;
+      }
+    }
+    &:hover{
+      box-shadow: none;
+    }
+  }
+}
+/* Article Enlace*/
+/* Main data*/
+.main-data {
+  background: $gray-background;
+  padding: 40px 8%;
+  margin-bottom: 80px;
+  .container {
+    h2{
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-4-large;
+      margin-bottom: 24px;
+    }
+    p{
+      font-size: $font-size-3-medium;
+      width: 90%;
+    }
+    .btn-wrapper{
+      .btn{
+        max-height: 50px;
+        padding: 12px 16px;
+      }
+      .btn-primary{
+        margin-right: 24px;
+        margin-bottom: 0px;
+        font-size: $font-size-2-medium;
+        border-radius: $border-radius-small;
+      }
+      .btn-secondary{
+        font-size: $font-size-2-medium;
+        border-radius: $border-radius-small;
+      }
+    }
+  }
+}
+/* Main data*/
+/* Main List */
+.main-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .main {
+    width: 50%;
+    min-width: 460px;
+    margin-bottom:60px ;
+    h2{
+      font-weight: $font-weight-semibold;
+    }
+    p{
+      font-size: $font-size-3-medium;
+    }
+    .see-more{
+      margin-bottom: 27px;
+      .btn-primary{
+        border-radius: $border-radius-small;
+        font-size: $font-size-3-small;
+      }
+    }
+    .card{
+      margin-top: 0px !important;
+      .card-body{
+        display: flex;
+        align-items: center;
+        .card-text{
+          margin: 0px;
+          width:65%;
+          font-weight: $font-weight-semibold;
+          font-size: $font-size-medium;
+        }
+      }
+    }
+    .card.card-horizontal.card-simple.card-horizontal .card-img-left{
+      width: 4rem;
+      height:4rem;
+      margin: 15px 15px 15px 0px;
+    }
+ 
+  }
+  .main:nth-child(2){
+    padding-left: 4%;
+  }
+  .questions{
+    margin: 15px;
+  }
+}
+/* Main List */
+/*main-banner*/
+.main-banner{
+  background-color: $gray-background;
+  padding: 40px 0px;
+  text-align: center;
+  h6{
+    margin-bottom: 30px;
+  }
+  .container:nth-child(1){
+    justify-content: center;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .external{
+      text-decoration: none;
+    }
+  }  
+}
+/*main-banner*/
+/*main-Footer*/
+.main-footer{
+  padding-bottom: 1.5rem;
+  .container{
+    max-width: 1120px;
+  }
+  .main-phone{
+    display: flex;
+    justify-content: space-between;
+    
+    img{
+      width: 110px;
+      height: 37px;
+      margin-bottom: 24px;
+    }
+
+    > section {
+      > ul,
+      > div {
+        padding-left: 20px;
+      }
+    }
+    .list-inline{
+      display: flex;
+      flex-wrap: wrap;
+      .list-inline-item {
+        &:not(:last-child) {
+          margin-right: 50px;
+        }
+        &:not(:first-child) {
+          max-width: 85px;
+        }
+         a{
+           text-decoration: underline;
+            p{
+              color:$gray-text;
+              font-size: $font-size-2-small;
+              font-weight: $font-weight-normal;
+              text-decoration: none;
+              display: inline-block;
+              flex-wrap: wrap;
+              width: 100%;
+            }
+         }
+
+         &.phone-items:first-child{
+          font-size: $font-size-2-medium;
+          margin-right: 70px;
+          a{
+            display: block;
+            font-size: $font-size-small;
+            white-space: nowrap;
+            font-weight: $font-weight-normal;
+            text-decoration: underline;
+          }
+        }
+       }
+     }
+  }
+ 
+ .main-redsocial{
+   display: flex;
+    .redsocial{
+      margin-left: 5%;
+      .list-inline-item{
+        a{
+          p{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .divider{
+    width: 90%;
+    margin: 3.063rem auto 1.5rem;
+    border-top: 2px solid white;
+  }
+  .footer-legal-section{
+    .row{
+      .footer-content-img{
+        .img-vamos-ba{
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+/*main-Footer*/
+/* MEDIA QUERIES */
+@media (max-width: 1120px){
+  /*Form consultar mi resultado*/
+  .main-form{
+    .main{
+      width: 100%;
+    }
+  }
+  /*Lista prevencion y sintomas*/
+  .main-list{
+    .main{
+      min-width: 50%;
+    }
+  }
+  /* Footer */
+
+}
+@media (max-width: 750px){
+  .navbar{
+    &.navbar-md{
+      height: 64px;
+      box-shadow: 0px 1px 3px #00000029;
+    }
+  }
+
+  .main-nav{
+    margin-bottom: 30px;
+    .main{
+      .breadcrumb{
+        margin:0px 0px 8px
+      }
+      p{
+        margin-bottom: 0.5rem;
+      }
+      .text-subtitle{
+        max-width: 100%;
+      }
+    }
+    .main-cards{
+      .card-body{
+        padding: 1.5rem 1rem;
+      }
+    }
+  }
+   /*Form consultar mi resultado*/
+  .form-consult{
+    padding: 0px;
+    .main-form{
+      padding:32px 14px 0px ;
+      border-radius: 0px;
+      .main{
+        .form{
+          flex-direction: column;
+          .form-wrapper{
+            width:100%;
+          }
+        }
+      }
+      .image-form{
+        width: 100%;
+        height: 280px;
+        background-position: 0px 10px;
+        position: initial;
+        background-size: 100%;
+      }
+    }
+  }
+   /*Servicios generales*/
+  .main-service{
+    margin-top: 48px;
+    margin-bottom: 60px;
+    .main{
+      .card{
+        margin-bottom: 32px;
+      }
+    }
+  }
+  /*ARTICLE SECTION */
+  .article-section{
+    .card-simple{
+      margin-bottom: 25px;
+    }
+  }
+  /*ARTICLE SECTION */
+   /*Escuelas*/
+  .main-school{
+    margin-bottom: 60px;
+    display: block;
+    h2{
+      font-weight: $font-weight-semibold;
+      margin-bottom: 24px;
+    }
+    .card-deck{
+      .card{
+        .card-body{
+          padding: 1.5rem 1rem;
+          .card-title{
+            font-size: $font-size-4-medium;
+            font-weight: $font-weight-semibold;
+          }
+        }
+      }
+      .card:nth-of-type(n+2){
+        margin-top: 20px;
+      }
+    }
+  }
+   /*Informes en datos*/
+  .main-data{
+    padding: 40px 0%;
+    h2{
+      margin-bottom: 16px;
+    }
+    .container{
+      .btn-wrapper{
+        .btn-primary{
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  /*Lista prevencion y sintomas*/
+  .main-list{
+    .main{
+      width: 100%;
+      min-width: 100%;
+      .card{
+        .card-body{
+          .card-text{
+            width: 100%;
+            font-weight: $font-weight-normal;
+          }
+        }
+        &.card-horizontal{
+          flex-direction: row;
+          margin-bottom: 0px;
+          .card-img-left{
+            margin-left: 0px;
+          }
+        }
+      }
+      .questions{
+        margin-left: 0px;
+      }
+    }
+    .main:nth-child(2){
+      padding: 0px;
+      margin-bottom: 30px;
+    }
+  }
+  /*Banner de enlaces*/
+  .main-banner{
+    text-align: start;
+    .container{
+      flex-direction: column;
+      h6{
+        font-weight: $font-weight-normal;
+      }
+      &.link{
+        .card-deck{
+          margin-bottom: 15px;
+        }
+      }
+    }
+    
+  }
+  /*Footer*/
+  .main-footer{
+    .main-phone{
+      flex-direction: column;
+      > section {
+        > ul,
+        > div {
+          padding-left: 0;
+        }
+      }
+
+      .list-inline{
+        flex-direction: column;
+        .list-inline-item{
+          a{
+            display: flex;
+            text-decoration: underline;
+            p{
+              color: white;
+              margin-left: 10px;
+              font-size: $font-size-3-small;
+              font-weight: $font-weight-normal;
+            }
+          }
+          &:not(:first-child) {
+            max-width: initial;
+          }
+        }
+      }
+    }
+
+    .main-redsocial {
+      flex-direction: column;
+
+      .redsocial {
+        margin-left: 0;
+        .list-inline-item {
+          a{
+            text-decoration: none;
+            p{
+              display: block;
+              text-decoration: underline;
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 280px){
+  .form-consult{
+    .main-form{
+      .image-form{
+        height: 160px;
+      }
+    }
+  }
+}
